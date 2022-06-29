@@ -1,4 +1,4 @@
-# Benchmark on Graph-level Tasks
+# Benchmark on Graph-Level Tasks
 
 ```
 python main.py dataset=PTC_MR
