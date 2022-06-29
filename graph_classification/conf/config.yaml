@@ -1,0 +1,137 @@
+defaults:
+  - _self_
+device: 0
+root: ''
+dataset: PTC_MR
+seed: 42
+
+params:
+  PTC_MR:
+    dataset_name: PTC_MR
+    add_self_loops: false
+    architecture:
+      num_layers: 3
+      alpha: 0.1
+      hidden_channels: 32
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.4
+      iter_nums: [16, 1]
+      linear: false
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: InstanceNorm
+      final_reduce: add
+
+    lr: 0.001084415058739539
+    wd: 0.
+    epochs: 1500
+    batch_size: 128
+    num_fold: 10
+    
+  MUTAG:
+    dataset_name: MUTAG
+    add_self_loops: false
+    architecture:
+      num_layers: 3
+      alpha: 0.15
+      hidden_channels: 32
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.2
+      iter_nums: [8, 1]
+      linear: false
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: InstanceNorm
+      final_reduce: add
+
+    lr: 0.03288152831370653
+    wd: 0.
+    epochs: 1000
+    batch_size: 128
+    num_fold: 10
+  
+  COX2:
+    dataset_name: COX2
+    add_self_loops: false
+    architecture:
+      num_layers: 3
+      alpha: 0.5
+      hidden_channels: 32
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.1
+      iter_nums: [8, 1]
+      linear: false
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: InstanceNorm
+      final_reduce: add
+
+    lr: 0.004199667776542409
+    wd: 0.
+    epochs: 1500
+    batch_size: 128
+    num_fold: 10
+  
+  PROTEINS:
+    dataset_name: PROTEINS
+    add_self_loops: false
+    architecture:
+      num_layers: 3
+      alpha: 0.5
+      hidden_channels: 32
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.4
+      iter_nums: [16, 1]
+      linear: false
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: InstanceNorm
+      final_reduce: add
+
+    lr: 0.002472941625740211
+    wd: 0.
+    epochs: 1500
+    batch_size: 128
+    num_fold: 10
+  
+  NCI1:
+    dataset_name: NCI1
+    add_self_loops: false
+    architecture:
+      num_layers: 3
+      alpha: 0.5
+      hidden_channels: 32
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.
+      iter_nums: [16, 1]
+      linear: false
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: InstanceNorm
+      final_reduce: add
+
+    lr: 0.0010081215757652639
+    wd: 0.
+    epochs: 2000
+    batch_size: 128
+    num_fold: 10

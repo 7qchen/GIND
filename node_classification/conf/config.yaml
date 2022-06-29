@@ -1,0 +1,262 @@
+defaults:
+  - _self_
+device: 0
+root: ''
+dataset: texas
+seed: 42
+
+params:
+  cora:
+    dataset_name: cora
+    add_self_loops: true
+    architecture:
+      num_layers: 1
+      alpha: 0.145
+      hidden_channels: 128
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.8
+      iter_nums: [32, 4]
+      linear: true
+      double_linear: false
+      act_imp: tanh
+      act_exp: relu
+      rescale: true
+      residual: true
+      norm: LayerNorm
+      reg_type: Lap
+      reg_coeff: 0.02083326084484297
+      final_reduce: null
+
+    imp_lr: 4.845229737171477e-06
+    exp_lr: 0.04553302632731857
+    imp_wd: 1e-5
+    exp_wd: 1e-5
+    epochs: 500
+    patience: 100
+    num_fold: 10
+
+  citeseer:
+    dataset_name: citeseer
+    add_self_loops: true
+    architecture:
+      num_layers: 1
+      alpha: 0.096
+      hidden_channels: 128
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.6
+      iter_nums: [32, 4]
+      linear: true
+      double_linear: false
+      act_imp: tanh
+      act_exp: relu
+      rescale: true
+      residual: true
+      norm: LayerNorm
+      reg_type: Lap
+      reg_coeff: 6.9
+      final_reduce: null
+
+    imp_lr: 0.00016624953416853247
+    exp_lr: 0.022267935152099735
+    imp_wd: 5e-6
+    exp_wd: 1e-5
+    epochs: 500
+    patience: 100
+    num_fold: 10
+
+  pubmed:
+    dataset_name: pubmed
+    add_self_loops: true
+    architecture:
+      num_layers: 1
+      alpha: 0.148
+      hidden_channels: 128
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.2
+      iter_nums: [64, 5]
+      linear: true
+      double_linear: false
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: LayerNorm
+      reg_type: Lap
+      reg_coeff: 4.895235961481567
+      final_reduce: null
+
+    imp_lr: 8.038946586130912e-05
+    exp_lr: 0.013915423904841157
+    imp_wd: 1e-4
+    exp_wd: 5e-6
+    epochs: 500
+    patience: 100
+    num_fold: 10
+
+  cornell:
+    dataset_name: cornell
+    add_self_loops: false
+    architecture:
+      num_layers: 1
+      alpha: 0.01
+      hidden_channels: 128
+      drop_input: true
+      dropout_imp: 0.7
+      dropout_exp: 0.
+      iter_nums: [36, 4]
+      linear: true
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: LayerNorm
+      final_reduce: null
+
+    imp_lr: 1.0600404386459695e-06
+    exp_lr: 0.046418459739577284
+    imp_wd: 5e-4
+    exp_wd: 1e-4
+    epochs: 1000
+    patience: 200
+    num_fold: 10
+  
+  texas:
+    dataset_name: texas
+    add_self_loops: false
+    architecture:
+      num_layers: 1
+      alpha: 0.02
+      hidden_channels: 128
+      drop_input: true
+      dropout_imp: 0.5
+      dropout_exp: 0.
+      iter_nums: [36, 4]
+      linear: true
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: LayerNorm
+      final_reduce: null
+
+    imp_lr: 1.341243672501185e-06
+    exp_lr: 0.027634964803478164
+    imp_wd: 0.
+    exp_wd: 5e-4
+    epochs: 1000
+    patience: 200
+    num_fold: 10
+  
+  wisconsin:
+    dataset_name: wisconsin
+    add_self_loops: false
+    architecture:
+      num_layers: 1
+      alpha: 0.07
+      hidden_channels: 128
+      drop_input: true
+      dropout_imp: 0.6
+      dropout_exp: 0.
+      iter_nums: [32, 4]
+      linear: true
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: true
+      residual: true
+      norm: LayerNorm
+      final_reduce: null
+
+    imp_lr: 1.356791943695535e-05
+    exp_lr: 0.019223951173302053
+    imp_wd: 0.
+    exp_wd: 1e-4
+    epochs: 1000
+    patience: 200
+    num_fold: 10
+  
+  chameleon:
+    dataset_name: chameleon
+    add_self_loops: false
+    architecture:
+      num_layers: 3
+      alpha: 0.56
+      hidden_channels: 256
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.
+      iter_nums: [1, 1]
+      linear: true
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: false
+      residual: true
+      norm: LayerNorm
+      final_reduce: null
+
+    imp_lr: 3.766686358596707e-06
+    exp_lr: 0.011730088038640809
+    imp_wd: 5e-6
+    exp_wd: 1e-5
+    epochs: 1000
+    patience: 200
+    num_fold: 10
+
+  squirrel:
+    dataset_name: squirrel
+    add_self_loops: false
+    architecture:
+      num_layers: 3
+      alpha: 0.68
+      hidden_channels: 256
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.
+      iter_nums: [1, 1]
+      linear: true
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: false
+      residual: true
+      norm: LayerNorm
+      final_reduce: null
+
+    imp_lr: 9.535687388328598e-05
+    exp_lr: 0.025399687358440556
+    imp_wd: 1e-5
+    exp_wd: 0.
+    epochs: 1000
+    patience: 200
+    num_fold: 10
+
+  ppi:
+    dataset_name: ppi
+    add_self_loops: true
+    architecture:
+      num_layers: 4
+      alpha: 0.08
+      hidden_channels: 256
+      drop_input: true
+      dropout_imp: 0.
+      dropout_exp: 0.
+      iter_nums: [1, 1]
+      linear: true
+      double_linear: true
+      act_imp: tanh
+      act_exp: elu
+      rescale: false
+      residual: true
+      norm: LayerNorm
+      final_reduce: null
+
+    lr: 0.004167843424430847
+    wd: 0.
+    epochs: 8000
+    patience: 2000
