@@ -174,7 +174,7 @@ class Implicit_Module(nn.Module):
 
 class GIND(nn.Module):
     r"""The Graph Neural Network from the "Optimization-Induced Graph Implicit 
-    Nonlinear " paper.
+    Nonlinear Diffusion" paper.
 
     Args:
         hidden_channels (int): The number of hidden channels of the equilibrium.
