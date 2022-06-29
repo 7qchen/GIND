@@ -16,7 +16,7 @@ We use [**Hydra**](https://hydra.cc/) to manage hyperparameter configurations.
 ## Project Structure
 
 * **`model/`** contains the model architecture of *GIND*
-* **`lib/`** contains helpful functions used in our experiments
+* **`libs/`** contains helpful functions used in our experiments
 * **`node_classification/`** includes experiments to evaluate *GIND* on node classification tasks
 * **`graph_classification/`** includes experiments to evaluate *GIND* on graph classification tasks
 

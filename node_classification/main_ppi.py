@@ -17,8 +17,8 @@ from sklearn.metrics import f1_score
 
 sys.path.append("../")
 
-from lib.utils import set_seed, style
-from lib.normalization import cal_norm
+from libs.utils import set_seed, style
+from libs.normalization import cal_norm
 
 from model.gind import GIND
 

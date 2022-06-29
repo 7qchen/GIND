@@ -10,8 +10,8 @@ from torch_scatter import scatter_add
 import sys
 sys.path.append("lib/")
 
-from lib.normalization import LayerNorm, InstanceNorm
-from lib.optimization import VariationalHidDropout
+from libs.normalization import LayerNorm, InstanceNorm
+from libs.optimization import VariationalHidDropout
 
 
 def get_act(act_type):

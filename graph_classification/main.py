@@ -18,9 +18,9 @@ from torch_geometric.data import DataLoader
 from sklearn.model_selection import StratifiedKFold
 
 sys.path.append("../")
-from lib.utils import set_seed, style
-from lib.normalization import cal_norm
-from lib.optimization import LinearScheduler
+from libs.utils import set_seed, style
+from libs.normalization import cal_norm
+from libs.optimization import LinearScheduler
 
 from model.gind import GIND
 

@@ -14,10 +14,10 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 sys.path.append("../")
-from lib.data import get_data
-from lib.utils import set_seed, style
-from lib.normalization import cal_norm
-from lib.metric import accuracy
+from libs.data import get_data
+from libs.utils import set_seed, style
+from libs.normalization import cal_norm
+from libs.metric import accuracy
 
 from model.gind import GIND
 
