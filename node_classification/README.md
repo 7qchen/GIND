@@ -1,4 +1,4 @@
-# Benchmark on Node-level Tasks
+# Benchmark on Node-Level Tasks
 For PPI dataset, run
 ```
 python main_ppi.py dataset=ppi
